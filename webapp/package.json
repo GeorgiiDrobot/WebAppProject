@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "formik": "^2.2.9",
     "i18next": "^21.6.0",
     "install": "^0.13.0",
     "npm": "^8.3.0",
@@ -14,7 +15,8 @@
     "react-i18next": "^11.15.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

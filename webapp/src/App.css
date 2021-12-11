@@ -1,9 +1,41 @@
 .App {
   background-color: #282c34;
+  font-family: sans-serif;
+
 }
 
 .page-wrap {
   min-height: 90vh;
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+.left {
+  width: 400px;
+  background-color: #0b3892;
+  grid-column: 1 / 2;
+}
+
+
+.right { 
+  width: 400px;
+  background-color: #0b3892;
+  grid-column: 3 / 4;
+}
+
+
+.main { 
+  background-color: #899abd;
+  grid-column: 2 / 3;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+  text-align: center;
+}
+
+.footer { 
+  background-color: #0b9248;
+  grid-column: 1 / 4;
 }
 
 .App-header {
@@ -16,6 +48,22 @@
   justify-content: space-between;
   padding: 15px;
   color: white;
+}
+
+.App-header select {
+  border: 1px solid #AAA;
+    border-radius: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 30px;
+    width: 100px;
 }
 
 .App-header h1 {
@@ -56,4 +104,67 @@
 .nav-panel a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: all 0.5s ;
+}
+
+form {
+  
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cardsLayout {
+  height: 380px;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.cardInfo {
+  padding: 0;
+  background-color:rgb(78, 101, 107);
+  border-radius: 15px;
+}
+
+.cardsLayout p {
+  padding: 25px;
+  font: 1em sans-serif;
+  font-weight: bold;
+}
+
+.card-container {
+  
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 500px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card-container h3 {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.card-container p {
+  color: rgb(48, 48, 48);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+.card-container img {
+  width: 500px;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: 10px;
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
