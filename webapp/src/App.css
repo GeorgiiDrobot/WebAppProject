@@ -1,57 +1,55 @@
 .App {
-  background-color: #282c34;
-  font-family: sans-serif;
-
+    background-color: #282c34;
+    font-family: sans-serif;
 }
 
 .page-wrap {
-  min-height: 90vh;
-  display: grid;
-  grid-template: auto 1fr auto / auto 1fr auto;
+    min-height: 90vh;
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
 }
+
 .left {
-  width: 400px;
-  background-color: #0b3892;
-  grid-column: 1 / 2;
+    width: 400px;
+    background-color: #0b3892;
+    grid-column: 1 / 2;
 }
 
-
-.right { 
-  width: 400px;
-  background-color: #0b3892;
-  grid-column: 3 / 4;
+.right {
+    width: 400px;
+    background-color: #0b3892;
+    grid-column: 3 / 4;
 }
 
-
-.main { 
-  background-color: #899abd;
-  grid-column: 2 / 3;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+.main {
+    background-color: #899abd;
+    grid-column: 2 / 3;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .main h2 {
-  text-align: center;
+    text-align: center;
 }
 
-.footer { 
-  background-color: #0b9248;
-  grid-column: 1 / 4;
+.footer {
+    background-color: #0b9248;
+    grid-column: 1 / 4;
 }
 
 .App-header {
-  position: sticky;
-  background-color: #3f4858;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-  align-items: left;
-  justify-content: space-between;
-  padding: 15px;
-  color: white;
+    position: sticky;
+    background-color: #3f4858;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
 }
 
 .App-header select {
-  border: 1px solid #AAA;
+    border: 1px solid #AAA;
     border-radius: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     color: #555;
@@ -67,104 +65,136 @@
 }
 
 .App-header h1 {
-  display: flex;
-  font-size: 28px;
-  font-weight: bold;
-  border-bottom: rgb(255, 255, 255);
-  border-bottom-style: solid;
-  height: 50px;
-  margin-top: 16px;
-  margin-left: 20px;
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    height: 50px;
+    margin-top: 16px;
+    margin-left: 20px;
 }
 
 .App-header select {
-  align-items: left;
-  color: #000;
-  width: 50px;
-  left: 100px;
+    align-items: left;
+    color: #000;
+    width: 50px;
+    left: 100px;
 }
 
 .nav-panel ul {
-  display: flex;
-  flex-direction: row;
-  height: 50px;
-  list-style: none;
-  margin-right: 1100px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    list-style: none;
+    margin-right: 1100px;
 }
 
 .nav-panel a {
-  text-decoration: none;
-  font-size: calc(10px + 2vmin);
-  padding: 20px;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
+    text-decoration: none;
+    font-size: calc(10px + 2vmin);
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .nav-panel a:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  transition: all 0.5s ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
 }
 
 form {
-  
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(184, 182, 182);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form input[type=email] {
+    width: 20%;
+    padding: 8px 20px;
+    margin: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: white;
+    align-self: center;
+}
+
+form input[type=password] {
+    width: 20%;
+    padding: 8px;
+    margin: 15px 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: white;
+    align-self: center;
+}
+
+form input[type=submit] {
+    background-color: rgb(156, 156, 156);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 22px;
 }
 
 .cardsLayout {
-  height: 380px;
-  display: flex;
-  flex-direction: row;
-  padding: 25px;
-  border-radius: 15px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .cardInfo {
-  padding: 0;
-  background-color:rgb(78, 101, 107);
-  border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(78, 101, 107);
+    border-radius: 15px;
+    height: 400px;
+    font-size: 20px;
 }
 
 .cardsLayout p {
-  padding: 25px;
-  font: 1em sans-serif;
-  font-weight: bold;
+    padding: 15px;
+    font: 1em sans-serif;
+    font-weight: bold;
 }
 
 .card-container {
-  
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 500px;
-  border-radius: 15px;
-  padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .card-container h3 {
-  font-family: sans-serif;
-  font-weight: bolder;
+    font-family: sans-serif;
+    font-weight: bolder;
 }
 
 .card-container p {
-  color: rgb(48, 48, 48);
-  font-family: sans-serif;
-  font-weight: bold;
+    color: rgb(48, 48, 48);
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
-
 .card-container img {
-  width: 500px;
-  border-radius: 15px;
+    width: 500px;
+    height: 170px;
+    border-radius: 15px;
 }
 
 .card-content {
-  padding: 10px;
-  background-color:rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
