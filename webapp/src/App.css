@@ -44,7 +44,7 @@
     height: 40px;
     background: grey;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: #394250;
+    background-color: #2e3239;
     grid-column: 1 / 4;
 
 }
@@ -74,7 +74,7 @@
 
 .App-header {
     position: sticky;
-    background-color: #394250;
+    background-color: #2e3239;
     height: 80px;
     overflow: hidden;
     display: flex;
@@ -114,11 +114,11 @@
 }
 
 @keyframes color-change {
-    0% { color: rgb(216, 212, 212); }
-    25% { color: rgb(29, 28, 28); }
-    50% { color: rgb(216, 212, 212); }
-    75% { color: rgb(29, 28, 28); }
-    100% { color: rgb(216, 212, 212); }
+    0% { color: #26292b; }
+    25% { color: #2e3239; }
+    50% { color: #5f7adb; }
+    75% { color: #a2b2ee; }
+    100% { color: #26292b; }
     
   }
 
@@ -256,13 +256,46 @@ form input[type=submit] {
 }
 
 .news-item{
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
     padding: 20px;
-    border: 1px solid;
+    border: 3px solid;
+    border-radius: 15px;
+    background-color:#a4aac4;
     margin-bottom: 20px;
 }
 
+.news-item a {
+    text-decoration: none;
+    color:black;
+}
+
+.date {
+    align-items: flex-end;
+    justify-content: right;
+    text-align: right;
+    color:rgb(255, 255, 255);
+}
+
+.news-item a:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
+}
+
+.news-list{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .news-img {
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    
 }
